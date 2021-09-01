@@ -1,0 +1,61 @@
+<html>
+<head>
+    <link href = "CSS/estilo.css" rel = "stylesheet">
+    <title>Corrente Alternada</title>
+</head>
+<body>
+    <header>
+        Cálculo de Circuitos em Corrente Alternada em Série
+    </header>
+    <main>
+        <form name="formulario" method="POST" autocomplete="on" spellcheck="true">
+        <div id="form">
+            <div id="valoresConhecidos">
+                <label>  Valores Conhecidos: </label> <br>
+                <input class='knowValues' type='checkbox' value="Tensão"/>Tensão <br>
+                <input class='knowValues' type='checkbox' value="Corrente"/>Corrente <br>
+                <input class='knowValues' type='checkbox' value="Impedância"/>Impedância 
+            </div>
+
+            <div id="formato">
+                <label name="primeiroValor"></label> <br>
+                <input type="radio" name="radPri"  value="Polar"><label>Polar</label>
+                <input type="radio" name="radPri"  value="Retangular"><label >Retangular</label> <br>
+
+                <label name="segundoValor"></label> <br>
+                <input type="radio" name="radSec" value="Polar"><label>Polar</label>
+                <input type="radio" name="radSec" value="Retangular"><label >Retangular</label>
+            </div>
+
+            <div id="dados">
+                <div>
+                    <label name="primeiroValor"> Valores Conhecidos:</label>
+                    <input type='text' id="vl1" placeholder="Real" />
+                    <input type='text' id='vl2' placeholder="Imaginário" />
+                </div>
+                <div>
+                    <label name="segundoValor"> Valores Conhecidos:</label>
+                    <input type='text' id="vl3" placeholder="Real" />
+                    <input type='text' id="vl4" placeholder="Imaginário" />
+                </div>
+                <div>
+                    <label> Frequência Angular:</label>
+                    <input  placeholder="Hz" id="freq" type='text'/>
+                </div>
+                <input type="button" id="calc" name="calc" value="Calcular"/>
+                <div>
+                    <textarea name="result" id="result"  rows="10" cols="40"  maxlength="500"  placeholder="Resultados" ></textarea>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+
+            </div>
+        </div>
+
+    </form>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
