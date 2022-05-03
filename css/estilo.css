@@ -2,8 +2,8 @@ body{
     margin:0;
     padding: 0;
     border: 0;
-    background-color: #ffffff;
-    background-image: url("imagens/circuito.jpg");
+    background-color: #414040;
+    
     background-size: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     overflow-x: hidden;
@@ -33,6 +33,7 @@ main{
     margin-left: auto;
     border-color: #fff;
     border-radius: 10px;
+    width: 415px;
  
 }
 
@@ -41,21 +42,29 @@ main{
     font-size: 19px;
     margin-left: 10px;
     margin-bottom: 5px; 
+    display: flex;
+    flex-direction: column;
 }
 
 #valoresConhecidos{
     border-bottom-width: 1mm;
     border-bottom-color: #fff;
+    
+    width: 200px;
 }
 
 #formato{
     margin-top: 10px;
     display: none;
+    
+    width: 200px;
 }
 
 #dados{
     margin-top: 10px;
     display: none;
+    
+    width: 410px;
 }
 input[type=text]{   
     border-radius:4px;
@@ -87,5 +96,12 @@ input[type=text]:hover{
 input[type=submit]{
    background:#006699;
    color:#ffffff;
+}
+
+#calc{
+    margin: 10px 0;
+    padding: 10px 15px;
+    justify-self: center;
+    
 }
 
